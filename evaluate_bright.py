@@ -53,7 +53,7 @@ if __name__ == "__main__":
 
         documents_embeddings = model.encode(
             sentences=list(tasks[0].corpus[eval_set]["standard"].values()),
-            batch_size=100,
+            batch_size=32,
             is_query=False,
             show_progress_bar=True,
         )
